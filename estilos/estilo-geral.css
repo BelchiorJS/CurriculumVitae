@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main.conteúdo {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 40px 32px 32px 32px;
+}
+
+nav[aria-label="Navegação principal"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav[aria-label="Navegação principal"] li {
+    margin: 0;
+}
+
+nav[aria-label="Navegação principal"] a {
+    display: inline-block;
+    width: 180px; 
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 8px;
+    background: #1a8f3c;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(67,206,162,0.10);
+    border: none;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+nav[aria-label="Navegação principal"] a:hover,
+nav[aria-label="Navegação principal"] a:focus {
+    background: #17692e;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(67,206,162,0.18);
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    nav[aria-label="Navegação principal"] ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    nav[aria-label="Navegação principal"] a {
+        width: 90vw;
+        font-size: 1.1rem;
+    }
+}
